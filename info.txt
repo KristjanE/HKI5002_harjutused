@@ -1,0 +1,8 @@
+http://tigu.hk.tlu.ee/~mart.mangus/hki5002/
+
+Jaagup Kippari ülesanded:
+http://minitorn.tlu.ee/~jaagup/kool/java/loeng/veebijatk/veebijatk.pdf
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+https://socket.io/get-started/chat/

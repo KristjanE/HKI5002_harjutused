@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Käibemaksu arvutus</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      function arvuta(){
+        var vahetatav=parseFloat(document.getElementById("vahetatav").value);
+        var kurss=parseFloat(document.getElementById("kurss").value);
+        var tasu=parseFloat(document.getElementById("tasu").value);
+        var tagasi=vahetatav*kurss;
+        var tagasi=tagasi-tagasi*(tasu/100);
+        // km=Math.round(km*100)/100; //ümardus 2 kohta pärast koma.
+        tagasi=tagasi.toFixed(2);
+        document.getElementById("vastus").innerHTML=tagasi;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Katsetuste leht</h1>
+    <p>Sisesta vahetatav summa:</p> 
+    <input type="text" id="vahetatav" value="100" />
+    <p>Sisesta kurss:</p> 
+    <input type="text" id="kurss" value="2" />
+    <p>Sisesta komisjonitasu %:</p> 
+    <input type="text" id="tasu" value="10" />
+    <br /><br />
+    <input type="button" value="OK" onclick="arvuta();" />
+    <div id="vastus">Vastuse koht.</div>
+  </body>
+</html>
