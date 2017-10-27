@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Test</title>
+    <script>
+      var xhr = new XMLHttpRequest();
+      function loeVeebist1() {
+        xhr.open("GET", "teade1.txt", false);
+        xhr.send();
+        document.getElementById("kiht1").innerHTML = xhr.responseText;
+      }
+      
+      function loeVeebist2() {
+        xhr.open("GET", "teade2.txt", false);
+        xhr.send();
+        document.getElementById("kiht2").innerHTML = xhr.responseText;
+      }
+      
+      function loeVeebist3() {
+        xhr.open("GET", "teade3.php", false);
+        xhr.send();
+        document.getElementById("kiht3").innerHTML = xhr.responseText;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="kiht1"></div>
+    <input type="button" value="Test 1" onclick="loeVeebist1()" />
+    <br />
+    <div id="kiht2"></div>
+    <input type="button" value="Test 2" onclick="loeVeebist2()" />
+    <br />
+    <div id="kiht3"></div>
+    <input type="button" value="Test 3" onclick="loeVeebist3()" />
+  </body>
+</html>
